@@ -1,0 +1,19 @@
+# 用户输入，并将其转换为浮动点数
+height = float(input("输入身高（米）："))
+weigh = float(input("输入体重（kg）："))
+
+# 直接计算 BMI
+calculate_bmi = weigh / (height ** 2)
+
+# 输出 BMI 值
+print(f"您的 BMI 是：{calculate_bmi:.2f}")
+
+# 判断 BMI 范围并输出相应结果
+if calculate_bmi < 18.5:
+    print('过轻')
+elif 18.5 <= calculate_bmi < 24.9:
+    print('正常')
+elif 25 <= calculate_bmi < 29.9:
+    print('偏重')
+else:
+    print('肥胖')
