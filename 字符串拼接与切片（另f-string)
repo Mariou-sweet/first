@@ -1,0 +1,27 @@
+name = input("What is your name?")
+age = input("How old are you?")
+message = f"Hello {name}! You are {age} years old."
+print(message)
+
+
+sentence = input ("输入一句话：")
+words = sentence.split()
+sentencee_two = "".join(words)
+print(sentencee_two)
+
+s = "Python programming"
+substring = s[:6]
+print(substring)
+
+
+string = input("请输入一个字符串: ")
+odd_chars = string[::2]  # 获取所有奇数位置的字符
+print(odd_chars)
+
+
+string = input("请输入一个字符串: ")
+if len(string) > 2:
+    new_string = f"{string[0]}{string[-1]}{string[1:-1]}"
+    print(new_string)
+else:
+    print("字符串太短，无法处理")
