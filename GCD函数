@@ -1,0 +1,23 @@
+循环
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+# 示例
+print(gcd(48, 18))  # 输出 6
+
+递归
+def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
+# 示例
+print(gcd(48, 18))  # 输出 6
+
+python内置函数
+import math
+
+print(math.gcd(48, 18))  # 输出 6
