@@ -1,6 +1,0 @@
-def addd(a, b):
-    addd=a+b
-    return a + b
-
-toyle=addd(1,2)
-print(toyle)
