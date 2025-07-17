@@ -1,0 +1,24 @@
+循环
+def factorial(n):
+    if n < 0:
+        return "不能计算负数的阶乘"
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# 示例
+print(factorial(5))  # 输出 120
+
+
+递归
+def factorial(n):
+    if n < 0:
+        return "不能计算负数的阶乘"
+    elif n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# 示例
+print(factorial(5))  # 输出 120
